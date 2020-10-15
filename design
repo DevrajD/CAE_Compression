@@ -1,0 +1,31 @@
+**************************************************
+* VITIS_AI Compilation - Xilinx Inc.
+**************************************************
+
+Kernel topology "encoder_net_kernel_graph.jpg" for network "encoder_net"
+kernel list info for network "encoder_net"
+                               Kernel ID : Name
+                                       0 : encoder_net
+
+                             Kernel Name : encoder_net
+--------------------------------------------------------------------------------
+                             Kernel Type : DPUKernel
+                               Code Size : 0.02MB
+                              Param Size : 0.08MB
+                           Workload MACs : 300.23MOPS
+                         IO Memory Space : 0.65MB
+                              Mean Value : 0, 0, 0, 
+                      Total Tensor Count : 6
+                Boundary Input Tensor(s)   (H*W*C)
+                            input_1:0(0) : 128*128*3
+
+               Boundary Output Tensor(s)   (H*W*C)
+                      conv2d_5_Relu:0(0) : 14*14*32
+
+                        Total Node Count : 5
+                           Input Node(s)   (H*W*C)
+                      conv2d_1_Conv2D(0) : 128*128*3
+
+                          Output Node(s)   (H*W*C)
+                      conv2d_5_Conv2D(0) : 14*14*32
+
